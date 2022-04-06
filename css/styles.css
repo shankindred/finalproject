@@ -1,0 +1,124 @@
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.secondary-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.4;
+    padding-bottom: 15px;
+}
+
+main {
+    background-image: url('../img/background2.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    background-blend-mode: multiply;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+
+      }
+    .desktop-nav {
+        display: none;
+    }
+    .nav-link {
+        display: none;
+    }
+    .mobile-hamburger {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile-link {
+        text-decoration: none;
+        padding: 10px;
+        font-weight: bold;
+        display: none;
+    }
+    main {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-image: url('../img/background2.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+    }
+    .main-text {
+        background: white;
+        opacity: 80%;
+        position: absolute;
+        top: 300px;
+        width: 100%;
+        padding: 20px;
+    }
+    .main-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    .main-button {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        background-color: black;
+        width: 100%;
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 3px;
+        }
+    h2 {
+        text-align: center;
+        padding: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+    .dog-indiv-container h3 {
+    padding: 10px;
+    }
+    .dog-indiv-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #E8E6E5;
+        border-radius: 4px;
+        background-color: #E8E6E5;
+        margin: 10px;
+        padding-bottom: 30px;
+        justify-content: center;
+    }
+    .dog {
+        width: 350px;
+        padding-bottom: 10px;
+    }
+    .main-dog-description {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .more-info {
+        text-decoration: none;
+        background-color: black;
+        text-align: center;
+        color: white;
+        padding: 15px;
+        border-radius: 3px;
+    }
+  }

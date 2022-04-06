@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt a Dog</title>
+    <link rel="stylesheet" href="css\styles.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,800;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="" alt="Logo">
+        <section class="desktop-nav">
+            
+           <a class="nav-link" href="">Adopt</a>
+           <a class="nav-link" href="">Ways to give</a>
+           <a class="nav-link" href="">Volunteer</a> 
+        </section>
+        <section class="mobile-hamburger">
+            <img src="img/hamburger.svg" alt="hamburger-icon" />
+        </section>
+        <section class="mobile-nav">
+            <a class="mobile-link" href="">Adopt</a>
+            <a class="mobile-link" href="">Ways to give</a>
+            <a class="mobile-link" href="">Volunteer</a>
+        </section>
+    </header>
+    <aside>
+    <form action="select">
+        <fieldset>
+        <label for="filter">Gender</label>
+            <input type="checkbox"><label for="">Male</label>
+            <input type="checkbox"><label for="">Female</label>
+        <label for="filter">Age</label>
+            <input type="checkbox"><label for="">Puppy</label>
+            <input type="checkbox"><label for="">Adult</label>
+            <input type="checkbox"><label for="">Senior</label>
+        <label for="filter">Size</label>
+            <input type="checkbox"><label for="">Small</label>
+            <input type="checkbox"><label for="">Medium</label>
+            <input type="checkbox"><label for="">Large</label>
+            <input type="submit" value="Filter">
+        </fieldset>
+    </form>
+    </aside>
+    <main>
+        <div class="main-text">
+        <h1>Find your new best friend</h1>
+        <h3 class="secondary-title">Save a life and adopt your perfect pup today!</h3>
+        <section class="main-buttons">
+            <a class="main-button" href="">Adopt</a>
+            <a class="main-button" href="">Donate</a>
+        </section>
+        </div>
+    </main>
+    <div>
+        <h2>Adoptable Dogs</h2>
+        <div class="dog-main-container">
+            <div class="dog-indiv-container">
+                <h3>Basil</h3>
+                <img class="dog" src="img\basil1.jpg" alt="Basil">
+                <section class="main-dog-description">
+                    <p>Female</p>
+                    <p>Adult</p>
+                    <p>Medium</p>
+                 </section>
+                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    More Info
+                  </button>
+            </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Basil</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="img\basil1.jpg" class="d-block w-100" alt="Basil">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="img\basil2.jpg" class="d-block w-100" alt="Basil">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="img\basil3.jpg" class="d-block w-100" alt="Basil">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                      </div>
+                    </div>
+                      <div>
+                          <p>Female</p>
+                          <p>Adult</p>
+                          <p>Medium</p>
+                          <p>Basil is a goofy love bug! She has a sweet disposition and is eager to learn. Basil's favorite things are long walks, playing with toys, and cuddling. Basil's ideal home would be with an active family and another dog companion.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Adopt today!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+        <div class="dog-main-container">
+                <div class="dog-indiv-container">
+                    <h3>Pepper</h3>
+                    <img class="dog" src="img\pepper1.jpg" alt="Pepper">
+                    <section class="main-dog-description">
+                        <p>Male</p>
+                        <p>Adult</p>
+                        <p>Medium</p>
+                     </section>
+                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        More Info
+                      </button>
+                </div>
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Pepper</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="img\pepper1.jpg" class="d-block w-100" alt="Pepper">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="img\pepper2.jpg" class="d-block w-100" alt="Pepper">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="img\pepper3.jpg" class="d-block w-100" alt="Pepper">
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                          </div>
+                        </div>
+                          <div>
+                              <p>Male</p>
+                              <p>Adult</p>
+                              <p>Medium</p>
+                              <p>Looking for an outgoing, spunky bassett hound mix? Pepper just might be your guy! He loves playing fetch, belly rubs and going on weekend hikes. He is extremely friendly with people and other dogs alike. Pepper is obedient and would be a great addition to any household!</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Adopt today!</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="dog-main-container">
+                    <div class="dog-indiv-container">
+                        <h3>Clea</h3>
+                        <img class="dog" src="img\clea1.jpg" alt="Pepper">
+                        <section class="main-dog-description">
+                            <p>Female</p>
+                            <p>Senior</p>
+                            <p>Medium</p>
+                         </section>
+                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                            More Info
+                          </button>
+                    </div>
+                <h3>Clea</h3>
+                <img src="img\clea1.jpg" alt="Clea">
+                <p>Female</p>
+                <p>Senior</p>
+                <p>Medium</p>
+                <a href="">More Info</a>
+            </div>
+            <section>
+                <div>
+                    <img src="img\clea1.jpg" alt="Clea">
+                    <img src="img\clea2.jpg" alt="Clea">
+                    <img src="img\clea3.jpg" alt="Clea">
+                </div>
+                <h3>Clea</h3>
+                <div>
+                    <p>Female</p>
+                    <p>Senior</p>
+                    <p>Medium</p>
+                </div>
+                <p>If you're looking for a cuddly dog to curl up on the couch with you, Clea is your girl! Her ideal day includes snuggling under a blanket or bathing in the sun. She loves toys and scratches behind her ears. While exercise is important for any dog's well-being, Clea is perfectly content lounging for most of the day.</p>
+                <a href="">Adopt Now</a>
+            </section>
+            <div>
+                <h3>Spencer</h3>
+                <img src="img\spencer1.jpg" alt="Spencer">
+                <p>Male</p>
+                <p>Senior</p>
+                <p>Large</p>
+                <a href="">More Info</a>
+            </div>
+            <section>
+                <div>
+                    <img src="img\spencer1.jpg" alt="Spencer">
+                    <img src="img\spencer2.jpg" alt="Spencer">
+                    <img src="img\spencer3.jpg" alt="Spencer">
+                </div>
+                <h3>Spencer</h3>
+                <div>
+                    <p>Male</p>
+                    <p>Senior</p>
+                    <p>Large</p>
+                </div>
+                <p>Spencer is 10 years young and looking for his forever home! Despite his age, he is spunky with lots of youthful energy. He is highly treat motivated and eager to please. While he would do best in a household without children, he is great with other dogs. Spencer would love an active home with a big backyard.</p>
+                <a href="">Adopt Now</a>
+            </section>
+            <div>
+                <h3>Clover</h3>
+                <img src="img\clover1.jpg" alt="Clover">
+                <p>Female</p>
+                <p>Puppy</p>
+                <p>Small</p>
+                <a href="">More Info</a>
+            </div>
+            <section>
+                <div>
+                    <img src="img\clover1.jpg" alt="Clover">
+                    <img src="img\clover2.jpg" alt="Clover">
+                    <img src="img\clover3.jpg" alt="Clover">
+                </div>
+                <h3>Clover</h3>
+                <div>
+                    <p>Female</p>
+                    <p>Puppy</p>
+                    <p>Small</p>
+                </div>
+                <p>Clover is ready to love you unconditionally. She finds great satisfaction in life's simple pleasures like a tennis ball to chase, a bone to chew, people to nuzzle with. Since she is a puppy, she is still learning her manners and could use a little extra training. She is smart and goofy, and would love a backyard to run around in.</p>
+                <a href="">Adopt Now</a>
+            </section>
+            <div>
+                <h3>Leroy</h3>
+                <img src="img\leroy1.jpg" alt="Leroy">
+                <p>Male</p>
+                <p>Puppy</p>
+                <p>Small</p>
+                <a href="">More Info</a>
+            </div>
+            <section>
+                <div>
+                    <img src="img\leroy1.jpg" alt="Leroy">
+                    <img src="img\leroy2.jpg" alt="Leroy">
+                    <img src="img\leroy3.jpg" alt="Leroy">
+                </div>
+                <h3>Leroy</h3>
+                <div>
+                    <p>Male</p>
+                    <p>Puppy</p>
+                    <p>Small</p>
+                </div>
+                <p>Don't let Leroy's size fool you! Leroy is an active, yet well-mannered, pup who is ready to accompany you on any adventure. Leroy does best with other small dogs, but is great with all people. After a busy day of playing with his toys he is ready to snuggle into your lap.</p>
+                <a href="">Adopt Now</a>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <p>2022 Shannon Kindred</p>
+    </footer>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
