@@ -10,6 +10,7 @@ const dogs = [
     carouselImage1: "img/basil1.jpg",
     carouselImage2: "img/basil2.jpg",
     carouselImage3: "img/basil3.jpg",
+    modalId: "Basil",
   },
   {
     name: "Pepper",
@@ -22,6 +23,7 @@ const dogs = [
     carouselImage1: "img/pepper1.jpg",
     carouselImage2: "img/pepper2.jpg",
     carouselImage3: "img/pepper3.jpg",
+    modalId: "Pepper",
   },
   {
     name: "Clea",
@@ -34,6 +36,7 @@ const dogs = [
     carouselImage1: "img/clea1.jpg",
     carouselImage2: "img/clea2.jpg",
     carouselImage3: "img/clea3.jpg",
+    modalId: "Clea",
   },
   {
     name: "Spencer",
@@ -46,6 +49,7 @@ const dogs = [
     carouselImage1: "img/spencer1.jpg",
     carouselImage2: "img/spencer2.jpg",
     carouselImage3: "img/spencer3.jpg",
+    modalId: "Spencer",
   },
   {
     name: "Clover",
@@ -58,6 +62,7 @@ const dogs = [
     carouselImage1: "img/clover1.jpg",
     carouselImage2: "img/clover2.jpg",
     carouselImage3: "img/clover3.jpg",
+    modalId: "Clover",
   },
   {
     name: "Leroy",
@@ -70,6 +75,7 @@ const dogs = [
     carouselImage1: "img/leroy1.jpg",
     carouselImage2: "img/leroy2.jpg",
     carouselImage3: "img/leroy3.jpg",
+    modalId: "Leroy",
   },
 ];
 // goal - take list of filtered dogs and populate the document with each dog
@@ -98,43 +104,44 @@ function showDogs(filteredDogs) {
                             <p>${currentDog.age}</p>
                             <p>${currentDog.size}</p>
                          </section>
-                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${modalId}">
+                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${currentDog.modalId}1">
                             More Info
                           </button>
                     </div>
-                    <div class="modal fade" id="${modalId}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="${currentDog.modalId}1" tabindex="-1" aria-labelledby="${currentDog.modalId}1" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
                          <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">${currentDog.name}</h5>
+                              <h5 class="modal-title" id="${currentDog.modalId}1">${currentDog.name}</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <div id="${currentDog.modalId}" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#${currentDog.modalId}" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#${currentDog.modalId}" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#${currentDog.modalId}" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          </div>
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="${currentDog.carouselImage1}" class="d-block w-100" alt="${currentDog.name}">
                             </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="${currentDog.carouselImage1}" class="d-block w-100" alt="${currentDog.name}">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="${currentDog.carouselImage2}" class="d-block w-100" alt="${currentDog.name}">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="${currentDog.carouselImage3}" class="d-block w-100" alt="${currentDog.name}">
-                              </div>
+                            <div class="carousel-item">
+                              <img src="${currentDog.carouselImage2}" class="d-block w-100" alt="${currentDog.name}">
                             </div>
-                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <div class="carousel-item">
+                              <img src="${currentDog.carouselImage3}" class="d-block w-100" alt="${currentDog.name}">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#${currentDog.modalId}" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                           </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <button class="carousel-control-next" type="button" data-bs-target="#${currentDog.modalId}" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                           </button>
+                        </div>
                         </div>
                                   <div class="additional-info">
                                       <p>${currentDog.gender}</p>
