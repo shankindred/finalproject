@@ -50,6 +50,7 @@ h1 {
   .nav-link {
     color: white;
     font-weight: bold;
+    font-size: 18px;
   }
   .nav-link:hover {
     color: #feadb9;
@@ -71,29 +72,50 @@ h1 {
     padding: 10px 20px;
     text-align: center;
     border-radius: 3px;
+    font-size: 20px;
+  }
+  .main-button:hover {
+    color: #feadb9;
   }
 
   /**start form styling**/
   form {
-    padding-top: 30px;
-    position: block;
+    padding: 20px 0 0 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
   }
   input[type="checkbox"] {
     position: relative;
     width: 1em;
     height: 1em;
+    margin: 0 0 0 20px;
   }
   .option {
     padding-bottom: 15px;
   }
   label[for="filter"] {
     padding-bottom: 5px;
+    font-size: 24px;
+    color: #7894ff;
+    font-weight: bold;
+  }
+  .gender-filter-container,
+  .age-filter-container,
+  .size-filter-container {
+    font-size: 18px;
   }
   /**end form styling**/
 
   h2 {
     text-align: center;
     padding: 30px;
+    color: #7894ff;
+    font-weight: bold;
+    font-size: 3rem;
   }
   .dog-indiv-container {
     display: flex;
@@ -110,9 +132,11 @@ h1 {
   .dog {
     width: 350px;
   }
-  #dog-list {
+  .flex-test {
+    display: flex;
+    column-gap: 80px;
     margin: auto;
-    width: 50%;
+    width: 60%;
   }
   .main-dog-description {
     display: flex;
@@ -155,13 +179,8 @@ h1 {
 
 /*****Mobile start*****/
 @media (max-width: 600px) {
-  i {
-    padding: 20px;
-  }
   header {
-    display: flex;
-    align-items: center;
-    padding: 0px 20px;
+    padding: 10px 20px;
   }
   .nav-container {
     display: flex;
@@ -175,13 +194,6 @@ h1 {
     display: none;
   }
   .mobile-nav {
-    display: flex;
-    flex-direction: column;
-  }
-  .mobile-link {
-    text-decoration: none;
-    padding: 10px;
-    font-weight: bold;
     display: none;
   }
 
@@ -225,23 +237,36 @@ h1 {
     padding: 10px 20px;
     text-align: center;
     border-radius: 3px;
+    font-size: 20px;
+  }
+  .main-button:hover {
+    color: #feadb9;
   }
 
   /**form styling **/
   form {
-    padding-top: 30px;
+    padding: 20px 0 0 10px;
     position: block;
   }
   input[type="checkbox"] {
     position: relative;
     width: 1em;
     height: 1em;
+    margin: 0 0 0 20px;
   }
   .option {
     padding-bottom: 15px;
   }
   label[for="filter"] {
     padding-bottom: 5px;
+    font-size: 24px;
+    color: #7894ff;
+    font-weight: bold;
+  }
+  .gender-filter-container,
+  .age-filter-container,
+  .size-filter-container {
+    font-size: 18px;
   }
 
   /**end form styling **/
@@ -252,6 +277,7 @@ h1 {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     font-size: 36px;
+    color: #7894ff;
   }
   .dog-indiv-container h3 {
     padding: 10px;
