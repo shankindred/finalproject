@@ -210,7 +210,6 @@ h1 {
     background-position: center;
     background-size: cover;
     height: 300px;
-    position: relative;
   }
   fieldset {
     padding: 20px;
@@ -249,7 +248,7 @@ h1 {
 
   /**form styling **/
   aside {
-    padding-top: 200px;
+    padding-top: 150px;
   }
   form {
     padding: 20px 0 0 10px;
