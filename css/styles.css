@@ -129,6 +129,10 @@ h1 {
     justify-content: center;
     width: 600px;
   }
+  .dog-indiv-container h3 {
+    font-size: 32px;
+    padding: 10px;
+  }
   .dog {
     width: 350px;
   }
@@ -141,7 +145,7 @@ h1 {
   .main-dog-description {
     display: flex;
     flex-direction: column;
-    padding: 0px;
+    padding-top: 10px;
     margin: 15px, 0;
     justify-content: center;
     text-align: center;
