@@ -124,19 +124,20 @@ h1 {
     border: 1px solid #e6ebff;
     border-radius: 4px;
     background-color: #e6ebff;
-    margin: 10px;
+    margin: 10px 0 30px 0;
     padding-bottom: 30px;
     justify-content: center;
     width: 600px;
   }
   .dog-indiv-container h3 {
-    font-size: 32px;
+    font-size: 44px;
     padding: 10px;
+    font-family: "Ribeye Marrow", cursive;
   }
   .dog {
     width: 350px;
   }
-  .flex-test {
+  .body {
     display: flex;
     column-gap: 80px;
     margin: auto;
@@ -247,7 +248,7 @@ h1 {
   }
 
   /**form styling **/
-  .flex-test {
+  .body {
     padding-top: 100px;
   }
   form {
@@ -287,6 +288,8 @@ h1 {
   }
   .dog-indiv-container h3 {
     padding: 10px;
+    font-family: "Ribeye Marrow", cursive;
+    font-size: 32px;
   }
   .dog-indiv-container {
     display: flex;
@@ -295,7 +298,7 @@ h1 {
     border: 1px solid #e6ebff;
     border-radius: 4px;
     background-color: #e6ebff;
-    margin: 10px;
+    margin: 10px 0 30px 0;
     padding-bottom: 30px;
     justify-content: center;
   }
