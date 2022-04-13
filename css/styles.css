@@ -252,7 +252,7 @@ h1 {
   }
   form {
     padding: 100px 0 0 10px;
-    position: block;
+    position: inline-block;
   }
   input[type="checkbox"] {
     position: relative;
