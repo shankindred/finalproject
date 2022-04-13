@@ -247,11 +247,8 @@ h1 {
   }
 
   /**form styling **/
-  aside {
-    padding-top: 150px;
-  }
   form {
-    padding: 20px 0 0 10px;
+    padding: 150px 0 0 10px;
     position: block;
   }
   input[type="checkbox"] {
