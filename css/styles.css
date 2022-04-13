@@ -248,7 +248,7 @@ h1 {
 
   /**form styling **/
   .flex-test {
-    padding-top: 50px;
+    padding-top: 100px;
   }
   form {
     padding: 100px 0 0 10px;
@@ -279,7 +279,7 @@ h1 {
 
   h2 {
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     font-size: 36px;
